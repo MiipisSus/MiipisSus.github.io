@@ -1,0 +1,44 @@
+@import url('./general.css');
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 20px;
+  height: 8vh;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-button {
+  padding: 0px 5px;
+}
+
+.nav-logo-links {
+  height: 100%;  
+}
+
+.nav-logo {
+  width: auto;
+  height: 90%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  color: rgb(137, 184, 202);
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(168, 227, 218)
+}
+
+.nav-links p {
+  color: rgb(238, 221, 191);
+}
