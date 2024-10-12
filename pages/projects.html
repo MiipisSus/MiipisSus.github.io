@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分類卡片切換</title>
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <script
+      src="https://kit.fontawesome.com/4f68f691df.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/load-elements.js"></script>
+    <script src="/js/projects.js"></script>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <div class="content">
+      <div class="category-groups">
+        <p class="category" data-category="all">All</p>
+        <p class="category" data-category="web-server">Web / Server</p>
+        <p class="category" data-category="discord-bot">Discord Bots</p>
+        <p class="category" data-category="game-dev">Game dev</p>
+      </div>
+      <div class="container">
+        <p id="prevBtn" class="nav-btn" disabled>
+          <i class="fa-solid fa-circle-chevron-left"></i>
+        </p>
+        <div class="page-container">
+          <main class="page-content">
+            <div class="card web-server">
+              <div class="card-content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">
+                  Check out all of these gorgeous mountain trips with beautiful
+                  views.
+                </p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+            <div class="card web-server">
+              <div class="card-content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">
+                  Check out all of these gorgeous mountain trips with beautiful
+                  views.
+                </p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+            <div class="card discord-bot">
+              <div class="card-content">
+                <h2 class="title">To The Beach</h2>
+                <p class="copy">
+                  Plan your next beach trip with these fabulous destinations.
+                </p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+            <div class="card discord-bot">
+              <div class="card-content">
+                <h2 class="title">To The Beach</h2>
+                <p class="copy">
+                  Plan your next beach trip with these fabulous destinations.
+                </p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+            <div class="card game-dev">
+              <div class="card-content">
+                <h2 class="title">Desert Destinations</h2>
+                <p class="copy">It's the desert you've always dreamed of.</p>
+                <button class="btn">Book Now</button>
+              </div>
+            </div>
+            <div class="card game-dev">
+              <div class="card-content">
+                <h2 class="title">Explore The Galaxy</h2>
+                <p class="copy">
+                  Seriously, just blast off into outer space today.
+                </p>
+                <button class="btn">Book Now</button>
+              </div>
+            </div>
+            <div class="card game-dev">
+              <div class="card-content">
+                <h2 class="title">Another Galaxy Trip</h2>
+                <p class="copy">
+                  Experience the wonders of the universe with this adventure.
+                </p>
+                <button class="btn">Book Now</button>
+              </div>
+            </div>
+          </main>
+        </div>
+        <p id="nextBtn" class="nav-btn">
+          <i class="fa-solid fa-circle-chevron-right"></i>
+        </p>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

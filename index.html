@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My GitHub Page</title>
-    <link rel="stylesheet" href="./styles/index.css" />
+    <title>MiipisSus Dev</title>
+    <link rel="stylesheet" href="/styles/index.css" />
   </head>
-  <script src="https://kit.fontawesome.com/4f68f691df.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/4f68f691df.js"
+    crossorigin="anonymous"
+  ></script>
   <body>
     <div id="nav-bar"></div>
 
@@ -20,17 +23,27 @@
           <div class="intro-text">
             <h1>你好！</h1>
             <h2>● 我的一點簡介</h2>
-            <p>我是李思妤，是位主攻 <strong>Python</strong> <i class="fa-brands fa-python"></i> 語言的後端工程師。
-            <br>業餘的興趣是少量繪圖接案 <i class="fa-solid fa-paintbrush"></i>，以及開發 <strong>Discord</strong> <i class="fa-brands fa-discord"></i> 機器人。</p>
-            <br>
+            <p>
+              我是李思妤，是位主攻 <strong>Python</strong>
+              <i class="fa-brands fa-python"></i> 語言的後端工程師。
+              <br />業餘的興趣是少量繪圖接案
+              <i class="fa-solid fa-paintbrush"></i>，以及開發
+              <strong>Discord</strong>
+              <i class="fa-brands fa-discord"></i> 機器人。
+            </p>
+            <br />
             <h2>● 我想說...</h2>
-            <p>謝謝您點進我的個人作品網站 <i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation"></i>
-            <br>更多資訊可從以下方式瀏覽，感謝您 <i class="fa-solid fa-face-laugh-beam"></i></p>
+            <p>
+              謝謝您點進我的個人作品網站 <i class="fa-solid fa-exclamation"></i
+              ><i class="fa-solid fa-exclamation"></i>
+              <br />更多資訊可從以下方式瀏覽，感謝您
+              <i class="fa-solid fa-face-laugh-beam"></i>
+            </p>
           </div>
-          <hr>
+          <hr />
           <div class="intro-links">
-            <a href="#about">關於我</a>
-            <a href="#projects">個人作品</a>
+            <a href="/pages/about-me.html">關於我</a>
+            <a href="/pages/projects.html">個人作品</a>
             <a href="#contact">聯絡方式與其他</a>
           </div>
         </div>
@@ -39,20 +52,20 @@
 
     <div id="footer"></div>
     <script>
-      fetch('./elements/nav-bar.html')
-        .then(response => {
-            return response.text();
+      fetch("./elements/nav-bar.html")
+        .then((response) => {
+          return response.text();
         })
-        .then(data => {
-            document.getElementById('nav-bar').innerHTML = data;
+        .then((data) => {
+          document.getElementById("nav-bar").innerHTML = data;
+        });
+      fetch("./elements/footer.html")
+        .then((response) => {
+          return response.text();
         })
-      fetch('./elements/footer.html')
-        .then(response => {
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        })
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
     </script>
   </body>
 </html>

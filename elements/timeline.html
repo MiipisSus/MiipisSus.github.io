@@ -1,0 +1,150 @@
+<head>
+  <link rel="stylesheet" href="/styles/elements/timeline.css" />
+  <script src="/js/timeline.js"></script>
+</head>
+<body>
+  <svg display="none">
+    <symbol id="arrow">
+      <polyline
+        points="7 10,12 15,17 10"
+        fill="none"
+        stroke="currentcolor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      />
+    </symbol>
+  </svg>
+  <h1>履歷 Timeline</h1>
+  <div id="timeline" class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button
+          class="timeline__arrow"
+          type="button"
+          id="item1"
+          aria-labelledby="item1-name"
+          aria-expanded="false"
+          aria-controls="item1-ctrld"
+          aria-haspopup="true"
+          data-item="1"
+        >
+          <svg
+            class="timeline__arrow-icon"
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+          >
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item1-name" class="timeline__meta">
+          <time class="timeline__date" datetime="1970-01-01"
+            >2023年 10月12日</time
+          ><br />
+          <strong class="timeline__title">現在</strong>
+        </span>
+      </div>
+      <div
+        class="timeline__item-body"
+        id="item1-ctrld"
+        role="region"
+        aria-labelledby="item1"
+        aria-hidden="true"
+      ></div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button
+          class="timeline__arrow"
+          type="button"
+          id="item2"
+          aria-labelledby="item2-name"
+          aria-expanded="false"
+          aria-controls="item2-ctrld"
+          aria-haspopup="true"
+          data-item="2"
+        >
+          <svg
+            class="timeline__arrow-icon"
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+          >
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item2-name" class="timeline__meta">
+          <time class="timeline__date" datetime="1973-10-17">2023年 8月1日</time
+          ><br />
+          <strong class="timeline__title"
+            >在 昇銳科技股份有限公司 <br />擔任 Python 工程師</strong
+          >
+        </span>
+      </div>
+      <div
+        class="timeline__item-body"
+        id="item2-ctrld"
+        role="region"
+        aria-labelledby="item2"
+        aria-hidden="true"
+      >
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">
+            前期主要針對 Pyqt 應用開發，並且接手 IPC 搜索軟體 IPFinder 的專案。
+            <br />後期則是負責協助後端維護、開發新的功能等等。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button
+          class="timeline__arrow"
+          type="button"
+          id="item3"
+          aria-labelledby="item3-name"
+          aria-expanded="false"
+          aria-controls="item3-ctrld"
+          aria-haspopup="true"
+          data-item="3"
+        >
+          <svg
+            class="timeline__arrow-icon"
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+          >
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item3-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2001-09-09"
+            >2023年 6月17日</time
+          ><br />
+          <strong class="timeline__title">學士畢業 於國立高雄大學</strong>
+        </span>
+      </div>
+      <div
+        class="timeline__item-body"
+        id="item3-ctrld"
+        role="region"
+        aria-labelledby="item3"
+        aria-hidden="true"
+      >
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">
+            我在四年的大學生活中，曾經擔任系學會幹部、迎新籌畫幹部以及烘焙社社長。
+            <br />這些經驗有助於我與他人協作、以及管理一個團隊的能力。
+            <br />
+            <br />並且，大學期間除了與他人協作的期末專案以外，也有使用 Unity
+            獨立完成的遊戲作品。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MiipisSus Dev</title>
+    <link rel="stylesheet" href="../styles/about-me.css" />
+    <script
+      src="https://kit.fontawesome.com/4f68f691df.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/pie-progress-bar.js"></script>
+    <script src="/js/timeline.js"></script>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+    <div class="content">
+      <div class="bio-card">
+        <h1>關於我</h1>
+        <div class="bio-content">
+          <div class="headshot-content">
+            <img src="/assets/bio-headshot.png" class="bio-headshot" />
+          </div>
+          <div class="bio-text">
+            <h2>迷你簡介 <i class="fa-solid fa-hand-point-left"></i></h2>
+            <div class="bio-grid">
+              <p class="title">姓名</p>
+              <p>李思妤</p>
+              <p class="title">暱稱（英文名）</p>
+              <p>Muri</p>
+              <p class="title">性別</p>
+              <p>女</p>
+              <p class="title">生日</p>
+              <p>2001/01/13</p>
+            </div>
+            <div id="pie"></div>
+          </div>
+        </div>
+        <div>
+          <h2>我是個怎麼樣的人 ...</h2>
+          <p>
+            我是一名主要<strong>使用 Python 語言</strong>的工程師，主要使用
+            <strong>Pyqt （Pyside5）</strong>進行應用軟體開發， 以及
+            <strong>REST Framework</strong> 進行後端開發，Database 使用過
+            <strong>Postgres SQL</strong> 以及 <strong>SQLite</strong>。 <br />
+            另外由於會把自己的作品放上 VM 託管，所以對設定、運行虛擬機（AWS /
+            GCP）也小有涉略。
+          </p>
+          <br />
+          <p>
+            我本人是一位願意主動學習的人 <i class="fa-solid fa-exclamation"></i
+            ><br />
+            若是學會對於工作需要、或是個人有興趣的新技能，也能打造出更好的作品。
+          </p>
+          <br />
+          <p>
+            我的個性在面對新環境時會相對內向和拘謹，不過我明白後端開發需要良好的團隊溝通與高度的討論性，因此我會積極參與每個討論事務。
+            <br />請多多指教 <i class="fa-solid fa-exclamation"></i
+            ><i class="fa-solid fa-exclamation"></i>
+          </p>
+        </div>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+      fetch("../elements/nav-bar.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("nav-bar").innerHTML = data;
+        });
+      fetch("../elements/footer.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+      fetch("../elements/pie-progress-bar.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("pie").innerHTML = data;
+          initializeDonut();
+        });
+      fetch("../elements/timeline.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("timeline").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

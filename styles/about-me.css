@@ -1,0 +1,83 @@
+@import url("/styles/general.css");
+/* @import url("./elements/timeline.css"); */
+
+.content {
+  display: flex;
+  height: 90vh;
+}
+
+.bio-card {
+  margin: 5vh 3vw 9vh;
+  padding: 1vh 3vw;
+
+  width: 60%;
+
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+
+  overflow: auto;
+}
+
+.bio-content {
+  display: flex;
+  padding-bottom: 2vh;
+}
+
+.headshot-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 2vw;
+
+  width: 25%;
+}
+
+.bio-headshot {
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bio-text {
+  width: 75%;
+}
+
+h1 {
+  padding: 3vh 0 0 0;
+  color: rgb(182, 147, 79);
+  line-height: 0;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(166, 216, 235);
+  padding: 0.3vh;
+  margin-bottom: 1vh;
+
+  width: 100%;
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  align-items: center;
+
+  padding-bottom: 1vh;
+}
+
+.bio-grid .title {
+  padding: 10px 10px;
+  margin: 0 1vw 1vh 0;
+
+  color: white;
+  background-color: rgb(239, 208, 155);
+  border-radius: 0 10px 10px 0;
+}
+
+.timeline {
+  width: 40%;
+}

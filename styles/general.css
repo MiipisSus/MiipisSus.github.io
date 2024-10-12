@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'jf-openhuninn';
-  src: url('../fonts/jf-openhuninn-2.1.ttf');
-  font-weight: normal; 
+  font-family: "jf-openhuninn";
+  src: url("/fonts/jf-openhuninn-2.1.ttf");
+  font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'jf-openhuninn', Arial, sans-serif;
+  font-family: "jf-openhuninn", Arial, sans-serif;
   margin: 0;
   padding: 0;
 
@@ -17,29 +17,56 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+p,
+br {
+  line-height: 1.3em;
+}
+
+/* 每個 html 應當在 nav-bar 以及 footer 之間使用 content */
+.content {
+  height: 87vh;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(249, 243, 223),
+    rgb(209, 224, 245)
+  );
+}
+
 @media (max-width: 600px) {
   h1 {
-      font-size: 30px;
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
   }
   p {
     font-size: 14px;
-    }
+  }
 }
 
-@media (min-width: 601px) and (max-width: 1200px) {
+@media (min-width: 601px) and (max-width: 1360px) {
   h1 {
-      font-size: 34px;
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 20px;
   }
   p {
     font-size: 16px;
-    }
+  }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1361px) {
   h1 {
-      font-size: 40px;
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
   }
   p {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
