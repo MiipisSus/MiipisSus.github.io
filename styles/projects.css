@@ -86,6 +86,15 @@
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
+.card:before {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 110%;
+}
 .card:nth-child(1):before {
   background-image: url("/assets/projects/miifachi.png");
 }
@@ -93,10 +102,19 @@
   background-image: url("/assets/projects/DCAI.png");
 }
 .card:nth-child(3):before {
-  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("/assets/projects/midog.png");
 }
 .card:nth-child(4):before {
-  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("/assets/projects/ipcam.png");
+}
+.card:nth-child(5):before {
+  background-image: url("/assets/projects/witch_purple.png");
+}
+.card:nth-child(6):before {
+  background-image: url("/assets/projects/room.png");
+}
+.card:nth-child(7):before {
+  background-image: url("/assets/projects/ramu.png");
 }
 
 .card-content {
