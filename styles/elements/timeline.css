@@ -27,6 +27,17 @@ h1 {
   margin: 0 0 3rem;
   text-align: center;
 }
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  /* font-size: 1.5vw; */
+}
+
+.title h1 {
+  padding-right: 2%;
+}
+
 .btn {
   background-color: var(--fg);
   border-radius: 0.25em;
@@ -47,10 +58,13 @@ h1 {
 }
 .timeline {
   margin: auto;
-  padding: 0 0.5em;
 
   max-width: 36em;
+  max-height: 80vh;
   width: 20vw;
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .timeline__arrow {
   background-color: transparent;
