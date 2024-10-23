@@ -61,18 +61,26 @@
 
     <div id="footer"></div>
     <script>
+      var isChangingImage = false; // 用於標記是否正在變更圖片
+
       function changeImage() {
         var img = document.getElementById("eye-image");
         var originalSrc = "/assets/mifa.png";
         var newSrc = "/assets/mifa-2.png";
 
+        isChangingImage = true; // 設置為正在變更圖片
+
         img.src = newSrc;
 
         setTimeout(function () {
           img.src = originalSrc;
+          isChangingImage = false; // 重置為未變更狀態
         }, 2000);
       }
+
       function blink() {
+        if (isChangingImage) return; // 如果正在變更圖片，則跳過這次眨眼
+
         var img = document.getElementById("eye-image");
         var openEye = "/assets/mifa.png";
         var closedEye = "/assets/mifa-3.png";
