@@ -96,16 +96,16 @@
   height: 110%;
 }
 .card:nth-child(1):before {
-  background-image: url("/assets/projects/miifachi.png");
+  background-image: url("/assets/projects/midogdaily.png");
 }
 .card:nth-child(2):before {
-  background-image: url("/assets/projects/DCAI.png");
+  background-image: url("/assets/projects/midogshop.png");
 }
 .card:nth-child(3):before {
-  background-image: url("/assets/projects/midog.png");
+  background-image: url("/assets/projects/miifachi.png");
 }
 .card:nth-child(4):before {
-  background-image: url("/assets/projects/ipcam.png");
+  background-image: url("/assets/projects/DCAI.png");
 }
 .card:nth-child(5):before {
   background-image: url("/assets/projects/witch_purple.png");

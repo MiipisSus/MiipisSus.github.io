@@ -1,102 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MiipisSus Dev</title>
-    <link rel="stylesheet" href="../styles/about-me.css" />
-    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/4f68f691df.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/js/pie-progress-bar.js"></script>
-    <script src="/js/timeline.js"></script>
-  </head>
-  <body>
-    <div id="nav-bar"></div>
-    <div class="content">
-      <div class="bio-card">
-        <h1>關於我</h1>
-        <div class="bio-content">
-          <div class="headshot-content">
-            <img src="/assets/bio-headshot.png" class="bio-headshot" />
-          </div>
-          <div class="bio-text">
-            <h2>迷你簡介 <i class="fa-solid fa-hand-point-left"></i></h2>
-            <div class="bio-grid">
-              <p class="title">姓名</p>
-              <p>李思妤</p>
-              <p class="title">暱稱</p>
-              <p>Mango</p>
-              <p class="title">性別</p>
-              <p>女</p>
-              <p class="title">生日</p>
-              <p>2001/01/13</p>
-            </div>
-            <div id="pie"></div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>MiipisSus Dev</title>
+  <link rel="stylesheet" href="../styles/about-me.css" />
+  <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/4f68f691df.js" crossorigin="anonymous"></script>
+  <script src="/js/pie-progress-bar.js"></script>
+  <script src="/js/timeline.js"></script>
+</head>
+
+<body>
+  <div id="nav-bar"></div>
+  <div class="content">
+    <div class="bio-card">
+      <h1>關於我</h1>
+      <div class="bio-content">
+        <div class="headshot-content">
+          <img src="/assets/bio-headshot.png" class="bio-headshot" />
         </div>
-        <div class="intro-text">
-          <h2>我是個怎麼樣的人 ...</h2>
-          <p>
-            我是一名專攻於<strong>Python 語言</strong>的工程師，主要使用
-            <strong>Pyqt （Pyside5）</strong>進行應用軟體開發， 以及
-            <strong>Django REST Framework</strong>
-            進行後端開發，資料庫較習慣使用 <strong>Postgres SQL</strong> 以及
-            <strong>SQLite</strong>。 <br />
-            另外會將自己的作品放上 GCP 託管，所以對設定、運行虛擬機（AWS /
-            GCP）也有些微涉略。
-          </p>
-          <br />
-          <p>
-            本身是一位會主動學習的人 <i class="fa-solid fa-exclamation"></i
-            ><br />
-            若是為了工作上的需求、或是出自個人興趣的新技能，想打造出更好的作品時，會自動自發地尋求新知，以學習進一步的技巧與能力。
-          </p>
-          <br />
-          <p>
-            個性上在面對新環境時會較為害羞；不過既使看起來內向文靜，我也對負責的專案有很高的責任心，會主動和其他人討論並推動進度，展現對工作的積極性。
-            <br />請多多指教 <i class="fa-solid fa-exclamation"></i
-            ><i class="fa-solid fa-exclamation"></i>
-          </p>
+        <div class="bio-text">
+          <h2>迷你簡介 <i class="fa-solid fa-hand-point-left"></i></h2>
+          <div class="bio-grid">
+            <p class="title">姓名</p>
+            <p>李思妤</p>
+            <p class="title">暱稱</p>
+            <p>Mango</p>
+            <p class="title">性別</p>
+            <p>女</p>
+            <p class="title">生日</p>
+            <p>2001/01/13</p>
+          </div>
+          <div id="pie"></div>
         </div>
       </div>
-      <div class="timeline" id="timeline"></div>
+      <div class="intro-text">
+        <h2>我是個怎麼樣的人 ...</h2>
+        <p>
+          我是一名專攻於<strong>Python 語言</strong>的工程師，主要使用
+          <strong>Django REST Framework</strong>
+          進行後端開發，資料庫較常使用 <strong>PostgresSQL</strong> 以及
+          <strong>SQLite</strong>。 <br />
+          此外，我偶爾會將個人作品部署於雲端平台（如 AWS、GCP、Render、fly.io 等），具備基本的雲端架設經驗，熟悉虛擬機的設定與應用部署流程，對於 VM 實際運行具一定程度的了解。
+        </p>
+        <br />
+        <p>
+          本身是一位會主動學習的人 <i class="fa-solid fa-exclamation"></i><br />
+          若是為了工作上的需求、或是出自個人興趣的新技能，想打造出更好的作品時，會自動自發地尋求新知，以學習進一步的技巧與能力。
+        </p>
+        <br />
+        <p>
+          個性上在面對新環境時會較為害羞；不過既使看起來內向文靜，我也對負責的專案有很高的責任心，會主動和其他人討論並推動進度，展現對工作的積極性。
+          <br />請多多指教 <i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation"></i>
+        </p>
+      </div>
     </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
 
-    <div id="footer"></div>
-    <script>
-      fetch("../elements/nav-bar.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          document.getElementById("nav-bar").innerHTML = data;
-        });
-      fetch("../elements/footer.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        });
-      fetch("../elements/pie-progress-bar.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          document.getElementById("pie").innerHTML = data;
-          initializeDonut();
-        });
-      fetch("../elements/timeline.html")
-        .then((response) => {
-          return response.text();
-        })
-        .then((data) => {
-          document.getElementById("timeline").innerHTML = data;
-        });
-    </script>
-  </body>
+  <div id="footer"></div>
+  <script>
+    fetch("../elements/nav-bar.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("nav-bar").innerHTML = data;
+      });
+    fetch("../elements/footer.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("footer").innerHTML = data;
+      });
+    fetch("../elements/pie-progress-bar.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("pie").innerHTML = data;
+        initializeDonut();
+      });
+    fetch("../elements/timeline.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.getElementById("timeline").innerHTML = data;
+      });
+  </script>
+</body>
+
 </html>

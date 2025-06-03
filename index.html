@@ -1,112 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MiipisSus Dev</title>
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/4f68f691df.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/js/load-elements.js"></script>
-  </head>
 
-  <body>
-    <div id="nav-bar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>MiipisSus Dev</title>
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/4f68f691df.js" crossorigin="anonymous"></script>
+  <script src="/js/load-elements.js"></script>
+</head>
 
-    <div class="content">
-      <div class="intro-card">
-        <div class="headshot-content">
-          <img src="/assets/main-headshot.png" class="main-img" />
-          <img
-            src="/assets/mifa.png"
-            class="small-img"
-            id="eye-image"
-            onclick="changeImage()"
-          />
+<body>
+  <div id="nav-bar"></div>
+
+  <div class="content">
+    <div class="intro-card">
+      <div class="headshot-content">
+        <img src="/assets/main-headshot.png" class="main-img" />
+        <img src="/assets/mifa.png" class="small-img" id="eye-image" onclick="changeImage()" />
+      </div>
+      <div class="intro-content">
+        <div class="intro-text">
+          <h1>你好！</h1>
+          <h2>● 我的一點簡介</h2>
+          <p>
+            我是李思妤，是位主攻 <strong>Python</strong>
+            <i class="fa-brands fa-python"></i> 語言的後端工程師。
+            <br />興趣是遊戲、狗，以及開發一些小型專案作品。
+          </p>
+          <br />
+          <h2>● 我想說...</h2>
+          <p>
+            謝謝您點進我的個人作品網站 <i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation"></i>
+            <br />更多資訊可從以下方式瀏覽，感謝您
+            <i class="fa-solid fa-face-laugh-beam"></i>
+          </p>
         </div>
-        <div class="intro-content">
-          <div class="intro-text">
-            <h1>你好！</h1>
-            <h2>● 我的一點簡介</h2>
-            <p>
-              我是李思妤，是位主攻 <strong>Python</strong>
-              <i class="fa-brands fa-python"></i> 語言的後端工程師。
-              <br />興趣是遊戲、狗，以及開發
-              <strong>Discord</strong>
-              <i class="fa-brands fa-discord"></i> 機器人。
-            </p>
-            <br />
-            <h2>● 我想說...</h2>
-            <p>
-              謝謝您點進我的個人作品網站 <i class="fa-solid fa-exclamation"></i
-              ><i class="fa-solid fa-exclamation"></i>
-              <br />更多資訊可從以下方式瀏覽，感謝您
-              <i class="fa-solid fa-face-laugh-beam"></i>
-            </p>
-          </div>
-          <hr />
-          <div class="intro-links">
-            <a href="/pages/about-me.html">關於我</a>
-            <a href="/pages/projects.html">個人作品</a>
-            <a href="/pages/contact.html">聯絡方式與其他</a>
-          </div>
+        <hr />
+        <div class="intro-links">
+          <a href="/pages/about-me.html">關於我</a>
+          <a href="/pages/projects.html">個人作品</a>
+          <a href="/pages/contact.html">聯絡方式與其他</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="footer"></div>
-    <script>
-      var isChangingImage = false; // 用於標記是否正在變更圖片
+  <div id="footer"></div>
+  <script>
+    var isChangingImage = false; // 用於標記是否正在變更圖片
 
-      function changeImage() {
-        var img = document.getElementById("eye-image");
-        var originalSrc = "/assets/mifa.png";
-        var newSrc = "/assets/mifa-2.png";
+    function changeImage() {
+      var img = document.getElementById("eye-image");
+      var originalSrc = "/assets/mifa.png";
+      var newSrc = "/assets/mifa-2.png";
 
-        isChangingImage = true; // 設置為正在變更圖片
+      isChangingImage = true; // 設置為正在變更圖片
 
-        img.src = newSrc;
+      img.src = newSrc;
 
-        setTimeout(function () {
-          img.src = originalSrc;
-          isChangingImage = false; // 重置為未變更狀態
-        }, 2000);
-      }
+      setTimeout(function () {
+        img.src = originalSrc;
+        isChangingImage = false; // 重置為未變更狀態
+      }, 2000);
+    }
 
-      function blink() {
-        if (isChangingImage) return; // 如果正在變更圖片，則跳過這次眨眼
+    function blink() {
+      if (isChangingImage) return; // 如果正在變更圖片，則跳過這次眨眼
 
-        var img = document.getElementById("eye-image");
-        var openEye = "/assets/mifa.png";
-        var closedEye = "/assets/mifa-3.png";
+      var img = document.getElementById("eye-image");
+      var openEye = "/assets/mifa.png";
+      var closedEye = "/assets/mifa-3.png";
 
-        // 切換為閉眼圖片
-        img.src = closedEye;
+      // 切換為閉眼圖片
+      img.src = closedEye;
 
-        // 短暫的眨眼過程
-        setTimeout(function () {
-          img.src = openEye;
-        }, 200); // 眨眼的過程持續 200 毫秒
-      }
+      // 短暫的眨眼過程
+      setTimeout(function () {
+        img.src = openEye;
+      }, 200); // 眨眼的過程持續 200 毫秒
+    }
 
-      function randomBlink() {
-        var randomTime = Math.random() * 2000 + 1000;
+    function randomBlink() {
+      var randomTime = Math.random() * 2000 + 1000;
 
-        // 每次等待隨機秒數後執行眨眼
-        setTimeout(function () {
-          blink();
-          randomBlink(); // 再次設置下一次眨眼
-        }, randomTime);
-      }
+      // 每次等待隨機秒數後執行眨眼
+      setTimeout(function () {
+        blink();
+        randomBlink(); // 再次設置下一次眨眼
+      }, randomTime);
+    }
 
-      // 啟動隨機眨眼功能
-      window.onload = function () {
-        randomBlink();
-      };
-    </script>
-  </body>
+    // 啟動隨機眨眼功能
+    window.onload = function () {
+      randomBlink();
+    };
+  </script>
+</body>
+
 </html>
